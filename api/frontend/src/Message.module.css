@@ -1,0 +1,208 @@
+.messageContainer {
+    background-color: var(--cat-crust);
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+    --embed-width: 368px;
+    --h1-size: min(calc(var(--embed-width) / 15), 7vw);
+    --h2-size: calc(var(--h1-size) / 1.5);
+    --price-size: calc(var(--h1-size) * 2);
+}
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu', 'Roboto', sans-serif;
+}
+
+* {
+    transition:
+        background 0.1s cubic-bezier(0.5, 0, 0.25, 0.85)
+        color 0.1s cubic-bezier(0.5, 0, 0.25, 0.85);
+}
+
+.filterContainer, .uploadContainer {
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.filterContainer > div,
+.uploadContainer > div {
+    width: 100%;
+    max-width: var(--embed-width);
+    align-self: center;
+}
+
+
+hr {
+    border-color: #0004;
+    width: 60%;
+    margin: 16px auto;
+}
+
+.listingPage {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.listingContainer {
+    scroll-snap-stop: always;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--body-bg);
+    width: calc(100vw - 32px);
+    padding: 16px;
+    overflow-y: auto;
+    height: 100%;
+    gap: 16px;
+    scroll-snap-align: start;
+}
+
+.luggageEmbed {
+    --color: #0088ff;
+    width: 100%;
+    max-width: 368px;
+    display: flex;
+    flex-direction: column;
+    padding: 4px 0px 0px 4px;
+    border-radius: 8px;
+    background-image:
+        linear-gradient(var(--embed-bg), var(--embed-bg)),
+        linear-gradient(to right, var(--color), var(--embed-bg) 50%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    overflow: hidden;
+    color: var(--text-normal);
+
+}
+
+.luggageEmbed img {
+    border-radius: 8px;
+    width: 100%;
+}
+
+.luggageInfo {
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    align-items: center;
+}
+
+.leftPanel {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+h1, h2 {
+    margin: 0;
+    color: var(--text-intense);
+}
+
+h1 { font-size: var(--h1-size); }
+h2 { font-size: var(--h2-size); }
+.rightPanel h1 { font-size: var(--price-size); }
+
+.rightPanel {
+    text-align: right;
+    font-size: 200%;
+    width: 50%;
+}
+
+ul {
+    padding: 0px 0px 0px 24px;
+    margin: 0px;
+    display: block;
+    width: 50%;
+    color: var(--text-muted);
+}
+
+.luggageDescription {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 8px;
+}
+
+.btnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 50%;
+}
+
+.btn {
+    --txt: var(--cat-highlight);
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--bg);
+    color: var(--txt);
+}
+
+.btn:hover {
+    filter: brightness(1.2);
+}
+
+.btn:active {
+    filter: brightness(0.8);
+}
+
+.btnSold {
+    --bg: var(--cat-rosewater);
+}
+
+.btnSell {
+    --bg: var(--cat-green);
+}
+
+.btnCart {
+    --bg: var(--cat-yellow);
+}
+
+.btnAction {
+    --bg: var(--cat-sky);
+}
+
+.btnUpload {
+    --bg: var(--cat-pink);
+}
+
+.filterEntry {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.optionsBar {
+    display: flex;
+    flex-direction: row;
+}
+
+.optionsBar > div {
+    width: 50%;
+    display: flex;
+    gap: 8px;
+    padding: 8px;
+    flex-direction: row;
+}
+
+.optionsBar .btn {
+    margin: 0px;
+}
+
+.optionsBar > div:last-child {
+    justify-content: end;
+}

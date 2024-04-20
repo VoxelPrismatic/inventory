@@ -1,0 +1,97 @@
+a { color: var(--link-new); }
+a:visited { color: var(--link-visited); }
+
+code {
+  white-space: pre-wrap !important;
+}
+
+div#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--body-bg);
+  line-height: 1.5;
+  font-family: "Ubuntu", sans-serif;
+}
+
+p { margin: 0; }
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-display: swap;
+  src: local("Ubuntu"), url("/src/assets/font/Ubuntu.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local("Ubuntu Bold"), url("/src/assets/font/Ubuntu.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-style: italic;
+  font-display: swap;
+  src: local("Ubuntu Italic"), url("/src/assets/font/Ubuntu-Italic.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: local("Ubuntu Bold Italic"), url("/src/assets/font/Ubuntu-Italic.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu Mono";
+  font-style: normal;
+  font-display: swap;
+  src: local("Ubuntu Mono"), url("/src/assets/font/UbuntuMono.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu Mono";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local("Ubuntu Mono Bold"), url("/src/assets/font/UbuntuMono.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu Mono";
+  font-style: italic;
+  font-display: swap;
+  src: local("Ubuntu Mono Italic"), url("/src/assets/font/UbuntuMono-Italic.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu Mono";
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: local("Ubuntu Mono Bold Italic"), url("/src/assets/font/UbuntuMono-Italic.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-stretch: condensed;
+  font-display: swap;
+  src: local("Ubuntu Condensed"), url("/src/assets/font/Ubuntu.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: condensed;
+  font-display: swap;
+  src: local("Ubuntu Condensed Bold"), url("/src/assets/font/Ubuntu.ttf") format("ttf");
+}
